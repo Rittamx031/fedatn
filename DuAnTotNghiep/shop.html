@@ -19,7 +19,7 @@
 
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
     integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
-  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.11.2/css/all.css" />
+
 
   <!-- Custom styles for this template -->
   <link href="css/style.css" rel="stylesheet" />
@@ -39,7 +39,7 @@
     <div class="container-fluid">
       <div class="heading_container heading_center">
         <h2>
-          Latest Products
+          Khăn choàng
         </h2>
       </div>
       <div class="row">
@@ -128,8 +128,26 @@ position: sticky;">
               <hr>
             </ul>
 
+            <!-- gia -->
             <p><b>Khoảng giá</b></p>
-            
+            <ul class="nav nav-pills flex-column mb-auto">
+
+              <li><input class="form-check-input mx-1" type="checkbox" value="" id="flexCheckChecked"
+                  style="font-size: 12px;">Dưới 500,000đ
+              </li>
+              <li><input class="form-check-input mx-1" type="checkbox" value="" id="flexCheckChecked"
+                  style="font-size: 12px;">500,000đ - 1,000,000đ
+              </li>
+              <li><input class="form-check-input mx-1" type="checkbox" value="" id="flexCheckChecked"
+                  style="font-size: 12px;">1,000,000đ - 2,000,000đ
+              </li>
+              <li><input class="form-check-input mx-1" type="checkbox" value="" id="flexCheckChecked"
+                  style="font-size: 12px;">Trên 2,000,000đ
+              </li>
+
+
+            </ul>
+
 
           </div>
         </div>
@@ -140,35 +158,44 @@ position: sticky;">
             <div class="col-sm-8 col-md-10 col-lg-10">
               <div class="d-inline-block" style="max-width: 100%;">
                 <div>Sản phẩm hiện có:{sp.soLuong}</div>
-                <div class="total_products fw-bolder  d-inline-block  p-1 my-3" style="min-width: max-content;">Lọc theo:</div>
+                <div class="total_products fw-bolder  d-inline-block  p-1 my-3" style="min-width: max-content;">Lọc
+                  theo:</div>
                 <div class="fillter_item d-inline-block px-2" style="min-width: max-content;"><a href=""
-                  class="text-center rounded-1 p-1 my-3 border border-2 text-dark">Thương hiệu: Chanel<i class="fas fa-times"></i></i></a></div>
+                    class="text-center rounded-1 p-1 my-3 border border-2 text-dark">Thương hiệu: Chanel<i
+                      class="fas fa-times"></i></i></a></div>
                 <div class="fillter_item d-inline-block px-2" style="min-width: max-content;"><a href=""
-                    class="text-center rounded-1 p-1 my-3 border border-2 text-dark">Xuất sứ: Việt Nam<i class="fas fa-times"></i></i></a></div>
+                    class="text-center rounded-1 p-1 my-3 border border-2 text-dark">Xuất sứ: Việt Nam<i
+                      class="fas fa-times"></i></i></a></div>
                 <div class="fillter_item d-inline-block px-2" style="min-width: max-content;"><a href=""
                     class="text-center rounded-1 p-1  my-3 border border-2 text-dark">
                     xx <i class="fas fa-times"></i></i></a></div>
-              
+
                 <div class="clear_fillter px-2  d-inline-block  my-3"><a href=""
                     class=" text-dark text text-decoration-underline">Xóa hết</a></div>
               </div>
             </div>
             <div class="col-sm-4 col-md-2 col-lg-2">
-              <div class="d-flex">
-                <div class="pageno">Sắp xếp theo:</div>
-                <select class="form-select" aria-label="Default select example">
-                
-                  <option value="1">Giá từ cao đến thấp</option>
-                  <option value="2">Giá từ thâp đến cao</option>
-                  <option value="3">Bán chạy nhất</option>
-                </select>
+              <div class="entry">
+                <div class="inline-text">Sắp xếp theo:</div>
+                <div class="simple-drop-down">
+                  <select class="sort-by custom-dropdown__select custom-dropdown__select--white">
+                    <option value="manual">Sản phẩm nổi bật</option>
+                    <option value="price-ascending">Giá: Tăng dần</option>
+                    <option value="price-descending">Giá: Giảm dần</option>
+                    <option value="title-ascending">Tên: A-Z</option>
+                    <option value="title-descending">Tên: Z-A</option>
+                    <option value="created-ascending">Cũ nhất</option>
+                    <option value="created-descending">Mới nhất</option>
+                    <option value="best-selling">Bán chạy nhất</option>
+                  </select>
+                </div>
               </div>
             </div>
             <!-- end fillter -->
             <div class="col-lg-3 col-md-4 col-sm-6 pb-1 py-4">
               <div class="product-item bg-light mb-4">
                 <div class="product-img position-relative overflow-hidden">
-                  <img class="img-fluid w-100" src="img/product-1.jpg" alt="">
+                  <img class="img-fluid w-100" src="images/anh1.jpg" alt="">
                   <div class="product-action">
                     <a class="btn btn-outline-dark btn-square" href=""><i class="fa fa-shopping-cart"></i></a>
                     <a class="btn btn-outline-dark btn-square" href=""><i class="fa fa-solid fa-eye"></i></a>
@@ -181,21 +208,14 @@ position: sticky;">
                     <h5>$123.00</h5>
                     <h6 class="text-muted ml-2"><del>$123.00</del></h6>
                   </div>
-                  <div class="d-flex align-items-center justify-content-center mb-1">
-                    <small class="fa fa-star text-starts mr-1"></small>
-                    <small class="fa fa-star text-starts mr-1"></small>
-                    <small class="fa fa-star text-starts mr-1"></small>
-                    <small class="fa fa-star text-starts mr-1"></small>
-                    <small class="fa fa-star text-starts mr-1"></small>
-                    <small>(99)</small>
-                  </div>
+
                 </div>
               </div>
             </div>
             <div class="col-lg-3 col-md-4 col-sm-6 pb-1 py-4">
               <div class="product-item bg-light mb-4">
                 <div class="product-img position-relative overflow-hidden">
-                  <img class="img-fluid w-100" src="img/product-2.jpg" alt="">
+                  <img class="img-fluid w-100" src="images/anh1.jpg" alt="">
                   <div class="product-action">
                     <a class="btn btn-outline-dark btn-square" href=""><i class="fa fa-shopping-cart"></i></a>
                     <a class="btn btn-outline-dark btn-square" href=""><i class="fa fa-solid fa-eye"></i></a>
@@ -205,24 +225,24 @@ position: sticky;">
                 <div class="text-center py-4">
                   <a class="h6 text-decoration-none text-truncate" href="">Product Name Goes Here</a>
                   <div class="d-flex align-items-center justify-content-center mt-2">
-                    <h5>$123.00</h5>
-                    <h6 class="text-muted ml-2"><del>$123.00</del></h6>
+                    <h5>150,000đ</h5>
+                    <h6 class="text-muted ml-2"><del>200,000đ</del></h6>
                   </div>
-                  <div class="d-flex align-items-center justify-content-center mb-1">
+                  <!-- <div class="d-flex align-items-center justify-content-center mb-1">
                     <small class="fa fa-star text-starts mr-1"></small>
                     <small class="fa fa-star text-starts mr-1"></small>
                     <small class="fa fa-star text-starts mr-1"></small>
                     <small class="fa fa-star text-starts mr-1"></small>
                     <small class="fa fa-star-half-alt text-primwwary mr-1"></small>
                     <small>(99)</small>
-                  </div>
+                  </div> -->
                 </div>
               </div>
             </div>
             <div class="col-lg-3 col-md-4 col-sm-6 pb-1 py-4">
               <div class="product-item bg-light mb-4">
                 <div class="product-img position-relative overflow-hidden">
-                  <img class="img-fluid w-100" src="img/product-4.jpg" alt="">
+                  <img class="img-fluid w-100" src="images/anh1.jpg" alt="">
                   <div class="product-action">
                     <a class="btn btn-outline-dark btn-square" href=""><i class="fa fa-shopping-cart"></i></a>
                     <a class="btn btn-outline-dark btn-square" href=""><i class="fa fa-solid fa-eye"></i></a>
@@ -232,24 +252,24 @@ position: sticky;">
                 <div class="text-center py-4">
                   <a class="h6 text-decoration-none text-truncate" href="">Product Name Goes Here</a>
                   <div class="d-flex align-items-center justify-content-center mt-2">
-                    <h5>$123.00</h5>
-                    <h6 class="text-muted ml-2"><del>$123.00</del></h6>
+                    <h5>150,000đ</h5>
+                    <h6 class="text-muted ml-2"><del>200,000đ</del></h6>
                   </div>
-                  <div class="d-flex align-items-center justify-content-center mb-1">
+                  <!-- <div class="d-flex align-items-center justify-content-center mb-1">
                     <small class="fa fa-star text-starts mr-1"></small>
                     <small class="fa fa-star text-starts mr-1"></small>
                     <small class="fa fa-star text-starts mr-1"></small>
-                    <small class="far fa-star text-starts mr-1"></small>
-                    <small class="far fa-star text-starts mr-1"></small>
+                    <small class="fa fa-star text-starts mr-1"></small>
+                    <small class="fa fa-star-half-alt text-primwwary mr-1"></small>
                     <small>(99)</small>
-                  </div>
+                  </div> -->
                 </div>
               </div>
             </div>
             <div class="col-lg-3 col-md-4 col-sm-6 pb-1 py-4">
               <div class="product-item bg-light mb-4">
                 <div class="product-img position-relative overflow-hidden">
-                  <img class="img-fluid w-100" src="img/product-5.jpg" alt="">
+                  <img class="img-fluid w-100" src="images/anh1.jpg" alt="">
                   <div class="product-action">
                     <a class="btn btn-outline-dark btn-square" href=""><i class="fa fa-shopping-cart"></i></a>
                     <a class="btn btn-outline-dark btn-square" href=""><i class="fa fa-solid fa-eye"></i></a>
@@ -259,24 +279,24 @@ position: sticky;">
                 <div class="text-center py-4">
                   <a class="h6 text-decoration-none text-truncate" href="">Product Name Goes Here</a>
                   <div class="d-flex align-items-center justify-content-center mt-2">
-                    <h5>$123.00</h5>
-                    <h6 class="text-muted ml-2"><del>$123.00</del></h6>
+                    <h5>150,000đ</h5>
+                    <h6 class="text-muted ml-2"><del>200,000đ</del></h6>
                   </div>
-                  <div class="d-flex align-items-center justify-content-center mb-1">
+                  <!-- <div class="d-flex align-items-center justify-content-center mb-1">
                     <small class="fa fa-star text-starts mr-1"></small>
                     <small class="fa fa-star text-starts mr-1"></small>
                     <small class="fa fa-star text-starts mr-1"></small>
                     <small class="fa fa-star text-starts mr-1"></small>
-                    <small class="fa fa-star text-starts mr-1"></small>
+                    <small class="fa fa-star-half-alt text-primwwary mr-1"></small>
                     <small>(99)</small>
-                  </div>
+                  </div> -->
                 </div>
               </div>
             </div>
             <div class="col-lg-3 col-md-4 col-sm-6 pb-1 py-4">
               <div class="product-item bg-light mb-4">
                 <div class="product-img position-relative overflow-hidden">
-                  <img class="img-fluid w-100" src="img/product-6.jpg" alt="">
+                  <img class="img-fluid w-100" src="images/anh1.jpg" alt="">
                   <div class="product-action">
                     <a class="btn btn-outline-dark btn-square" href=""><i class="fa fa-shopping-cart"></i></a>
                     <a class="btn btn-outline-dark btn-square" href=""><i class="fa fa-solid fa-eye"></i></a>
@@ -286,24 +306,24 @@ position: sticky;">
                 <div class="text-center py-4">
                   <a class="h6 text-decoration-none text-truncate" href="">Product Name Goes Here</a>
                   <div class="d-flex align-items-center justify-content-center mt-2">
-                    <h5>$123.00</h5>
-                    <h6 class="text-muted ml-2"><del>$123.00</del></h6>
+                    <h5>150,000đ</h5>
+                    <h6 class="text-muted ml-2"><del>200,000đ</del></h6>
                   </div>
-                  <div class="d-flex align-items-center justify-content-center mb-1">
+                  <!-- <div class="d-flex align-items-center justify-content-center mb-1">
                     <small class="fa fa-star text-starts mr-1"></small>
                     <small class="fa fa-star text-starts mr-1"></small>
                     <small class="fa fa-star text-starts mr-1"></small>
                     <small class="fa fa-star text-starts mr-1"></small>
-                    <small class="fa fa-star-half-alt text-starts mr-1"></small>
+                    <small class="fa fa-star-half-alt text-primwwary mr-1"></small>
                     <small>(99)</small>
-                  </div>
+                  </div> -->
                 </div>
               </div>
             </div>
             <div class="col-lg-3 col-md-4 col-sm-6 pb-1 py-4">
               <div class="product-item bg-light mb-4">
                 <div class="product-img position-relative overflow-hidden">
-                  <img class="img-fluid w-100" src="img/product-7.jpg" alt="">
+                  <img class="img-fluid w-100" src="images/anh1.jpg" alt="">
                   <div class="product-action">
                     <a class="btn btn-outline-dark btn-square" href=""><i class="fa fa-shopping-cart"></i></a>
                     <a class="btn btn-outline-dark btn-square" href=""><i class="fa fa-solid fa-eye"></i></a>
@@ -313,24 +333,24 @@ position: sticky;">
                 <div class="text-center py-4">
                   <a class="h6 text-decoration-none text-truncate" href="">Product Name Goes Here</a>
                   <div class="d-flex align-items-center justify-content-center mt-2">
-                    <h5>$123.00</h5>
-                    <h6 class="text-muted ml-2"><del>$123.00</del></h6>
+                    <h5>150,000đ</h5>
+                    <h6 class="text-muted ml-2"><del>200,000đ</del></h6>
                   </div>
-                  <div class="d-flex align-items-center justify-content-center mb-1">
+                  <!-- <div class="d-flex align-items-center justify-content-center mb-1">
                     <small class="fa fa-star text-starts mr-1"></small>
                     <small class="fa fa-star text-starts mr-1"></small>
                     <small class="fa fa-star text-starts mr-1"></small>
-                    <small class="fa fa-star-half-alt text-starts mr-1"></small>
-                    <small class="far fa-star text-starts mr-1"></small>
+                    <small class="fa fa-star text-starts mr-1"></small>
+                    <small class="fa fa-star-half-alt text-primwwary mr-1"></small>
                     <small>(99)</small>
-                  </div>
+                  </div> -->
                 </div>
               </div>
             </div>
             <div class="col-lg-3 col-md-4 col-sm-6 pb-1 py-4">
               <div class="product-item bg-light mb-4">
                 <div class="product-img position-relative overflow-hidden">
-                  <img class="img-fluid w-100" src="img/product-8.jpg" alt="">
+                  <img class="img-fluid w-100" src="images/anh1.jpg" alt="">
                   <div class="product-action">
                     <a class="btn btn-outline-dark btn-square" href=""><i class="fa fa-shopping-cart"></i></a>
                     <a class="btn btn-outline-dark btn-square" href=""><i class="fa fa-solid fa-eye"></i></a>
@@ -340,29 +360,33 @@ position: sticky;">
                 <div class="text-center py-4">
                   <a class="h6 text-decoration-none text-truncate" href="">Product Name Goes Here</a>
                   <div class="d-flex align-items-center justify-content-center mt-2">
-                    <h5>$123.00</h5>
-                    <h6 class="text-muted ml-2"><del>$123.00</del></h6>
+                    <h5>150,000đ</h5>
+                    <h6 class="text-muted ml-2"><del>200,000đ</del></h6>
                   </div>
-                  <div class="d-flex align-items-center justify-content-center mb-1">
+                  <!-- <div class="d-flex align-items-center justify-content-center mb-1">
                     <small class="fa fa-star text-starts mr-1"></small>
                     <small class="fa fa-star text-starts mr-1"></small>
                     <small class="fa fa-star text-starts mr-1"></small>
-                    <small class="far fa-star text-starts mr-1"></small>
-                    <small class="far fa-star text-starts mr-1"></small>
+                    <small class="fa fa-star text-starts mr-1"></small>
+                    <small class="fa fa-star-half-alt text-primwwary mr-1"></small>
                     <small>(99)</small>
-                  </div>
+                  </div> -->
                 </div>
               </div>
+            </div>
+            <div class="pagination ">
+              <ul class="pagination justify-content-center">
+                <li class="page-item"><a class="page-link" href="javascript:void(0);">Previous</a></li>
+                <li class="page-item"><a class="page-link" href="javascript:void(0);">1</a></li>
+                <li class="page-item"><a class="page-link" href="javascript:void(0);">2</a></li>
+                <li class="page-item"><a class="page-link" href="javascript:void(0);">Next</a></li>
+              </ul>
             </div>
           </div>
-        </div>
-        <div class="btn-box">
-          <a href="">
-            View All Products
-          </a>
+
+
         </div>
       </div>
-    </div>
   </section>
   <!-- end shop section -->
   <script src="js/jquery-3.4.1.min.js"></script>
